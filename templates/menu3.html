@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>영화추천</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='img/favicon.png') }}" rel="icon" >
+  <link href="{{ url_for('static', filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{{ url_for('static', filename='lib/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+<style>
+    ul {
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+
+    }
+    li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+    li a.active {
+        background-color: #000000;
+        color: white;
+    }
+    li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+
+
+    #s_left{
+        width: 200px;
+        height: 1550px;
+        background-color:white;
+        float:left;
+        color : #04B404;
+        padding :10px;
+        margin:10px;
+        border-radius:20px;
+    }
+
+    #mid{
+        padding :10px;
+        margin: 10px;
+        border-radius:20px;
+        background-color:white;
+        float : middle;
+        width : 80%;
+        height : 1550px;
+        color : #04B404;
+        text-align:center;
+    }
+</style>
+</head>
+<body style="background-color:#F3E2A9">
+
+<!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="/">Home</a></li>
+          <li><a href="/menu">역대 박스오피스 순위</a></li>
+          <li><a href="/menu3">장르별 추천 영화</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Welcome to 영화 추천</h1>
+      <h2>장르별 추천 영화</h2>
+    </div>
+  </section><!-- #hero -->
+
+</div>
+</body>
+
+    <!--==========================
+      about Section
+    ============================-->
+    <section id="about">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+        </div>
+
+
+
+
+<p style="font-size:300%"><b>장르별 추천 영화</b></p>
+<p><a href="/all" style="font-size : 30px; word-spacing : 95px;">전체   </a>
+    <a href="/action" style="font-size : 30px; word-spacing : 95px;">액션   </a>
+    <a href="/horror" style="font-size : 30px; word-spacing : 95px;">공포   </a>
+    <a href="/thriller" style="font-size : 30px; word-spacing : 95px;">스릴러   </a>
+    <a href="/anime" style="font-size : 30px; word-spacing : 95px;">애니메이션   </a>
+    <a href="/adv" style="font-size : 30px; word-spacing : 95px;">모험</a></p>
+
+<p><a href="/drama" style="font-size : 30px; word-spacing : 95px;">드라마  </a>
+    <a href="/fantasy" style="font-size : 30px; word-spacing : 95px;">판타지 </a>
+    <a href="/SF" style="font-size : 30px; word-spacing : 95px;">SF  </a>
+    <a href="/criminal" style="font-size : 30px; word-spacing : 95px;">범죄   </a>
+    <a href="/musical" style="font-size : 30px; word-spacing : 95px;">뮤지컬  </a>
+    <a href="/comedy" style="font-size : 30px; word-spacing : 95px;">코미디</a></p>
+
+<p><a href="/romance" style="font-size : 30px; word-spacing : 95px;">로맨스   </a>
+    <a href="/mystery" style="font-size : 30px; word-spacing : 95px;">미스터리  </a>
+    <a href="/war" style="font-size : 30px; word-spacing : 95px;">전쟁   </a>
+    <a href="/noir" style="font-size : 30px; word-spacing : 95px;">느와르     </a>
+    <a href="/adventure" style="font-size : 30px; word-spacing : 95px;">모험   </a>
+    <a href="/documentary" style="font-size : 30px; word-spacing : 95px;">다큐멘터리 </a></p>
+
+
+
+
+
+        </div>
+
+      </div>
+    </section><!-- about -->
+
+
+
+
+
+ <!-- JavaScript Libraries -->
+  <script src="{{ url_for('static', filename='lib/jquery/jquery.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/jquery/jquery-migrate.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/easing/easing.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/wow/wow.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/counterup/counterup.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/superfish/hoverIntent.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/superfish/superfish.min.js')}}"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="{{ url_for('static', filename='contactform/contactform.js')}}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+</body>
+</html>
