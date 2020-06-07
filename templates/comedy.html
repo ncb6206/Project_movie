@@ -80,9 +80,9 @@
     <div class="container">
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="/">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="/menu">역대 박스오피스 순위</a></li>
-          <li><a href="/menu3">장르별 추천 영화</a></li>
+          <li class="menu-active"><a href="/menu3">장르별 추천 영화</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -96,38 +96,548 @@
     <div class="hero-container">
       <h1>Welcome to 영화 추천</h1>
       <h2>장르별 추천 영화</h2>
+      <a href="#portfolio" class="btn-get-started">시작하기</a>
     </div>
   </section><!-- #hero -->
 
 </div>
 </body>
 
-    <!--==========================
-      about Section
+
+
+
+<!--==========================
+      Portfolio Section
     ============================-->
-    <section id="about">
+    <section id="portfolio" >
       <div class="container wow fadeInUp">
+
         <div class="section-header">
+          <h3 style="font-size:300%"; class="section-title">코미디 추천 영화</h3>
+           <h5></h5>
+          <p class="section-description">2020.06.01일자 네이버영화에 수록된 영화의 네티즌 평점을 높은순으로 정렬한 순위입니다.</p>
         </div>
 
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter=".filter-1, .filter-2, .filter-3, .filter-4, .filter-5" class="filter-active">All</li>
+              <li data-filter=".filter-1">1위~10위</li>
+              <li data-filter=".filter-2">11위~20위</li>
+              <li data-filter=".filter-3">21위~30위</li>
+              <li data-filter=".filter-4">31위~40위</li>
+              <li data-filter=".filter-5">40위~50위</li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="row" id="portfolio-wrapper" style="padding:60px">
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-1" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=18543" style="width:200px;height:290px;"target="_blank">
+             <img src="{{ url_for('static', filename='movie/18543.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>1위</h4>
+                <span>서유기 2 - 선리기연</span>
+              </div>
+            </a>
+          </div>
 
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-1" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=73372" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/73372.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>2위</h4>
+                <span>세 얼간이</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-1" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=19099" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/19099.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>3위</h4>
+                <span>트루먼 쇼</span>
+              </div>
+            </a>
+          </div>
 
-<p style="font-size:300%"><b>코미디 추천 영화</b></p>
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-1" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=87566" style="width:200px;height:290px;" target="_blank">
+              <img src="{{ url_for('static', filename='movie/87566.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>4위</h4>
+                <span>언터처블: 1%의 우정</span>
+              </div>
+            </a>
+          </div>
 
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-1" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=16210" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/16210.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>5위</h4>
+                <span>미세스 다웃파이어</span>
+              </div>
+            </a>
+          </div>
 
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-1" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=10249" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/10249.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>6위</h4>
+                <span>모던 타임즈</span>
+              </div>
+            </a>
+          </div>
 
-    
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-1" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=65021" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/65021.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>7위</h4>
+                <span>라따뚜이</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-1" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=31726" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/31726.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>8위</h4>
+                <span>엽기적인 그녀</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-1" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=31159" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/31159.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>9위</h4>
+                <span>패밀리 맨</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-1" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=10101" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/10101.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>10위</h4>
+                <span>로마의 휴일</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-2" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=10341" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/10341.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>11위</h4>
+                <span>위대한 독재자</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-2" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=12393" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/12393.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>12위</h4>
+                <span>시스터 액트</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-2" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=18542" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/18542.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>13위</h4>
+                <span>서유기 - 월광보합</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-2" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=37486" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/37486.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>14위</h4>
+                <span>스쿨 오브 락</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-2" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=58088" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/58088.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>15위</h4>
+                <span>라디오 스타</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-2" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=51143" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/51143.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>16위</h4>
+                <span>과속스캔들</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-2" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=10600" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/10600.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>17위</h4>
+                <span>빅</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-2" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=10047" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/10047.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>18위</h4>
+                <span>스팅</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-2" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=18934" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/18934.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>19위</h4>
+                <span>마틸다</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-2" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=187308" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/187308.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>20위</h4>
+                <span>조조 래빗</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-3" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=17131" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/17131.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>21위</h4>
+                <span>마스크</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-3" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=10440" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/10440.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>22위</h4>
+                <span>취권</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-3" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=65463" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/65463.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>23위</h4>
+                <span>즐거운 인생</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-3" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=58437" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/58437.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>24위</h4>
+                <span>클릭</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-3" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=123688" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/123688.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>25위</h4>
+                <span>우드잡</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-3" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=37888" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/37888.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>26위</h4>
+                <span>아는 여자</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-3" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=24094" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/24094.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>27위</h4>
+                <span>패치 아담스</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-3" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=76016" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/76016.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>28위</h4>
+                <span>써니</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-3" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=58333" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/58333.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>29위</h4>
+                <span>혐오스런 마츠코의 일생</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-3" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=146489" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/146489.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>30위</h4>
+                <span>패딩턴 2</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-4" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=133402" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/133402.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>31위</h4>
+                <span>피케이: 별에서 온 얼간이</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-4" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=16172" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/16172.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>32위</h4>
+                <span>시스터 액트 2</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-4" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=188056" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/188056.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>33위</h4>
+                <span>결혼 이야기</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-4" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=70910" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/70910.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>34위</h4>
+                <span>내 깡패 같은 애인</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-4" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=36858" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/36858.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>35위</h4>
+                <span>브루스 올마이티</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-4" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=26677" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/26677.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>36위</h4>
+                <span>경찰서를 털어라</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-4" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=10828" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/10828.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>37위</h4>
+                <span>영구와 땡칠이</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-4" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=16601" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/16601.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>38위</h4>
+                 <span>바그다드 카페 : 디렉터스컷</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xs-8 col-lg-2.9 portfolio-item filter-4" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=47321" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/47321.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>39위</h4>
+                <span>알로, 슈티</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-4" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=18878" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/18878.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>40위</h4>
+                <span>이보다 더 좋을 순 없다</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-5" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=107924" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/107924.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>41위</h4>
+                <span>수상한 그녀</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-5" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=24926" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/24926.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>42위</h4>
+                <span>록 스탁 앤 투 스모킹 배럴즈</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-5" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=69917" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/69917.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>43위</h4>
+                <span>울학교 이티</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-5" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=118917" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/118917.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>44위</h4>
+                <span>인턴</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-5" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=60530" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/60530.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>45위</h4>
+                <span>미스 리틀 선샤인</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-5" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=38835" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/38835.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>46위</h4>
+                <span>터미널</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-5" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=36727" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/36727.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>47위</h4>
+                <span>선생 김봉두</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-5" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=27350" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/27350.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>48위</h4>
+                <span>기쿠지로의 여름</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-5" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=39524" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/39524.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>49위</h4>
+                <span>스윙걸즈</span>
+              </div>
+            </a>
+          </div>
+
+           <div class="col-xs-8 col-lg-2.9 portfolio-item filter-5" style="width:200px;height:290px;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=10532" style="width:200px;height:290px;"target="_blank">
+              <img src="{{ url_for('static', filename='movie/10532.jpg')}}" alt="" >
+              <div class="details" style="background-color:black" style="width:200px">
+                <h4>50위</h4>
+                <span>불가사리</span>
+              </div>
+            </a>
+          </div>
 
 
         </div>
 
       </div>
-    </section><!-- about -->
+    </section><!-- #portfolio -->
 
-
-
-
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
  <!-- JavaScript Libraries -->
   <script src="{{ url_for('static', filename='lib/jquery/jquery.min.js')}}"></script>
