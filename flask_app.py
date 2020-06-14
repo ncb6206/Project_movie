@@ -100,4 +100,4 @@ def mystery_flask():
     return render_template('mystery.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
